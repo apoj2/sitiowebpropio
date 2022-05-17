@@ -21,6 +21,7 @@ ul{
 .contenedor{
     margin: auto;
     background-color: #000;
+    height: 60px;
 }
 /*Barra lateral principal*/
 nav{
@@ -34,6 +35,7 @@ nav{
     padding: 20px 0;
     transition: all 0.5s ease;
     width: 100%;
+    z-index: 1;
 }
 nav .active{
     background: #fff;  
@@ -47,6 +49,7 @@ nav .active{
 nav ul{
     list-style: none;
     display: inline-flex;
+    margin: 20px;
 }
 .barra-listas > li{
     display: block;
@@ -133,7 +136,7 @@ nav ul li a:hover{
 /*contactos global*/
 .banner-contacto{
     width: 20%;
-    height: 560px;
+    height: 590px;
     background: linear-gradient(yellow,rgb(184, 184, 52),rgb(109, 92, 37),rgb(85, 58, 40),rgb(85, 54, 54));
     margin: 20px ;
     color:#000;;

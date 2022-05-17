@@ -21,6 +21,7 @@ ul{
 .contenedor{
     margin: auto;
     background-color: #000;
+    height: 60px;
 }
 /*Barra lateral principal*/
 nav{
@@ -48,8 +49,10 @@ nav .active{
 nav ul{
     list-style: none;
     display: inline-flex;
+margin: 20px;
 }
 .barra-listas > li{
+    
     display: block;
     padding: 60px;
 }
@@ -141,6 +144,7 @@ nav ul li a:hover{
     margin:10px 0;
     border-radius: 15px;
 }
+
 .flecha{
 
    
@@ -149,17 +153,17 @@ nav ul li a:hover{
     
 }
 .flecha>a{
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: #f80000;
     position: fixed;
     bottom: 0;
     box-sizing: border-box;
     border-radius: 180px;
     right: 0;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    line-height: 35px;
+    line-height: 20px;
 }
 .solucionesdecarpado{
     
@@ -238,7 +242,7 @@ nav ul li a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin: 20px 10px;
-    background-color: #232925;
+    
 }
 .servicios .fondo{
     width: 30%;
@@ -1075,6 +1079,7 @@ video{
   margin: 8px;
   font-size: 12;
 }
+
 .btn-s2S:hover {
   color: #fff;/* color de fuente hover */
 }

@@ -33,11 +33,17 @@ a{
 ul{
     list-style: none;
 }
-
+.contenedor{
+  margin-top: 20px;
+  margin-left: 20px;
+  background:rgb(0, 0, 0);
+  height: 60px;
+  
+}
 /*Barra lateral principal*/
 nav{
     background:rgb(0, 0, 0, .5);
-    position: fixed;
+    
     font-size: 17px;
     display: inline-flex;
     justify-content: space-between;
@@ -45,7 +51,7 @@ nav{
     height: 60px;
     padding: 20px 0;
     transition: all 0.5s ease;
-    width: 100%;
+    width: 97%;
     z-index: 1;
 }
 nav .active{
@@ -60,14 +66,17 @@ nav .active{
 nav ul{
     list-style: none;
     display: inline-flex;
+    margin: 20px;
 }
 .barra-listas > li{
     display: block;
     padding: 60px;
+    z-index: 1;
 }
 .barra-listas > li > a{
     display: block;
     color: #fff;
+   
 }
 /*:hover para colocar una raya cada vez que se pase por un elemento LI de la barra lateral*/
 nav ul li a:hover{
@@ -143,13 +152,32 @@ nav ul li a:hover{
     border-radius: 15px;
 }
 
+.flecha{
 
+   
+  scroll-margin-top: 50px;
+  
+  
+}
+.flecha>a{
+  width: 30px;
+  height: 30px;
+  background-color: #f80000;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  border-radius: 180px;
+  right: 0;
+  font-size: 40px;
+  text-align: center;
+  line-height: 20px;
+}
 
 
 /*contactos global*/
 .banner-contacto{
     width: 20%;
-    height: 560px;
+    height: 590px;
     background: linear-gradient(yellow,rgb(184, 184, 52),rgb(109, 92, 37),rgb(85, 58, 40),rgb(85, 54, 54));
     margin: 20px ;
     color:#000;;
@@ -176,7 +204,7 @@ nav ul li a:hover{
     margin: 10px 0px;
         width: 30%;
         height: auto;
-        background-color: rgb(255, 238, 2);
+        
         display: inline;
         align-items: center;
         justify-content: center;
@@ -290,7 +318,18 @@ justify-content: center;
 }
 /*Styles portafolio*/
 .principalp{
- 
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.principalp1{
+  position: relative;
+  width: 82%;
+  overflow: scroll;
+  height: 700px;
+}
+.barralateral{
+  width: 250px;
 }
 
 .foto{
@@ -299,9 +338,11 @@ justify-content: center;
     font-size: 30px;
 }
 .foto1{
+  background-color: yellow;
   justify-content: center;
   text-align: center;
   font-size: 30px;
+  color: #000;
  
 }
 
@@ -314,6 +355,8 @@ img{
     display: flex;  
     margin: 30px 10px;
     padding: 30px;
+flex-wrap: wrap;
+    
 }
 .gallery{
  width: 300px;
@@ -322,11 +365,11 @@ img{
 }
 .galleryfondo{
   justify-content: center;
-  
+  flex-wrap: wrap;
   margin: 20px 10px;
 }
 .fondoprc{
-  background-color:rgba(255, 153, 0, 0.5);
+  
 }
 
 .banner-volqueta{
@@ -777,3 +820,101 @@ img  {
     margin: 50px;
   }
  }
+ .barralateral{
+
+	width: 300px;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	transition: all 500ms ease;
+	
+	
+}
+.titulobarralateral{
+	display: flex;
+	justify-content: space-between;
+  background-color: yellow;
+}
+.titulobarralateral>section>h1{
+  background-color: #f8000091;
+  border-radius: 15px;
+	
+}
+
+
+.control1{
+background-color: rgb(255, 255, 0);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+flex-direction: column;
+cursor: pointer;
+transition: all 500ms ease;
+
+}
+.listalateral{
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.listalateral-click{
+	cursor: pointer;
+}
+
+.link{
+	color: #303440;
+	display: block;
+	padding: 15px 0;
+	text-decoration: none;
+
+}
+.list_inside{
+	border-radius: 6px;
+	padding-left: 10px;
+}
+.list_inside:hover{
+	background: #f6f8fa;
+
+}
+.show_lista{
+ 
+	width: 80%;
+	margin-left: auto;
+	border-left: 2px solid #303440;
+	list-style: none;
+	transition: height .4s;
+	height: 0;
+}
+
+.boton_lista{
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	width: 70%;
+	margin: 0 auto;
+}
+.arrow .arrow_lista{
+  
+	transform: rotate(90deg);
+	}
+.arrow_lista{
+	margin-left: auto;
+	transition: transform .3s;
+}
+
+
+.icon-cards {
+  position: relative;
+	width: 60vw;
+	height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+	perspective: 1000px;
+  transform-origin: center;
+
+	
+
+}
