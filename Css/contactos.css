@@ -1,0 +1,879 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+    color: #fff;
+    background-color: #232925;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+  
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.contenedor{
+    margin: auto;
+    background-color: #000;
+}
+/*Barra lateral principal*/
+nav{
+    background:rgb(0, 0, 0, .5);
+    position: fixed;
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+nav .active{
+    background: #fff;  
+}
+/*Anchor del logo, que espacio ocupa */
+.barra-logo{
+    width: 30px;
+    margin: 0px 40px;
+}
+/*Como iran distribuidas las listas en la barra lateral*/
+nav ul{
+    list-style: none;
+    display: inline-flex;
+}
+.barra-listas > li{
+    display: block;
+    padding: 60px;
+}
+.barra-listas > li > a{
+    display: block;
+    color: #fff;
+}
+/*:hover para colocar una raya cada vez que se pase por un elemento LI de la barra lateral*/
+nav ul li a:hover{
+         border-bottom: 2px solid #ffff;
+                 /*altura,que es un linea visible,color de la linea*/                          
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width:15%;
+    background-color: rgb(0, 0, 0, .5);
+}
+.barra-listas li:hover .menu-vertical{
+    display:inline-block;
+    
+}
+.menu-vertical li:hover{
+    background-color: rgb(0, 0, 0, .5);
+}
+.menu-vertical li a{
+    display: inline-block;
+    color: #fff ;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.menu-vertical2{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 15%;
+    background-color: rgb(0, 0, 0, .5);
+}
+.barra-listas li:hover .menu-vertical2{
+    display: block;
+}
+.menu-vertical2 li:hover{
+    background-color: #000;
+}
+.menu-vertical2 li a{
+    display: block;
+    color: #fff ;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/*Edicion boton menu para dispositivo android*/
+.boton-menu{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.2rem;
+    display: none;
+}
+
+/*Imagen  principal de la pagina*/
+
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    border:1px solid #fff;
+    margin:10px 0;
+    border-radius: 15px;
+}
+
+/* Seccion de nuestros productos*/
+/* texto*/
+.servicio{
+    margin: 0 0;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*contactos global*/
+.foto{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+  }
+.banner-contacto{
+    width: 20%;
+    height: 60px;
+    background: linear-gradient(yellow,rgb(184, 184, 52),rgb(109, 92, 37),rgb(85, 58, 40),rgb(85, 54, 54));
+    margin: 20px ;
+    color:#000;;
+    border-radius: 15px;
+}
+.content-banner{
+    display: inline;
+    margin: 10px 0px;
+    text-align: center;
+    justify-content: flex-end;
+}
+.banner-contacto a{
+    display: inline-block;
+    margin: 20px 50px;
+}
+.fotos2{
+    justify-content: center;
+    display: flex;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+    
+}
+.fotos2 .fondo{
+    margin: 10px 0px;
+        width: 30%;
+        height: auto;
+        background-color: rgb(255, 238, 2);
+        display: inline;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        -moz-border-radius:15px;
+        -webkit-border-radius:15px;
+    }
+
+.fotos2 img{
+    width: 100%;
+    height: 250px;
+}
+.fotos2 h2{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    align-items: center;
+    margin: 0px 30px;
+}
+.fotos2 .btn-servicios a{
+    margin: 10px 50px;
+align-items: center;
+justify-content: center;
+}
+
+
+/*Seccion de redes sociales global*/
+.social{
+   
+    width: auto;
+    
+}
+.social .links{
+    display: flex;
+    justify-content: center;
+ 
+}
+.social p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.social a{
+   
+   display: flex;
+   padding: 15px;
+   
+}
+.social .links a i{
+    font-size: 2rem;
+ 
+}
+
+.footer{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width:auto;
+    background-color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    padding: 6px 0;
+    text-align: center;
+    padding-bottom: 13px;
+}
+.footer .linksimportantes{
+    display: flex;
+}
+.footer .linksimportantes .Contacto{
+    color: #000;
+    margin: 20px;
+    background: linear-gradient(yellow,rgb(184, 184, 52),rgb(109, 92, 37),rgb(85, 58, 40),rgb(85, 54, 54));
+    border-radius: 15px;
+    display: inline-block;
+    width: 20%;    
+}
+
+
+.footer .linksimportantes .Atencionacliente{
+    width: 35%;
+}
+.footer .linksimportantes .Atencionacliente li{
+    padding: 15px ;
+}
+.footer .linksimportantes .SobreNosotros{
+    width: 35%;
+}
+.footer .linksimportantes .SobreNosotros li{
+    padding: 15px;
+}
+.footer .linksimportantes .Tienda{
+    width: 35%;
+}
+.footer .linksimportantes .Tienda li{
+    padding: 15px;
+}
+
+
+
+
+/*styles contacto*/
+
+.contactoemail{
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background: rgb(253, 237, 7);
+    padding: 40px;
+    
+}
+.contactoemail .fondo{
+    display: inline-block;
+   border-radius: 15px;
+    background: url(/Imagenes/ImgvidContacto/lOGO\ SISDECAR.png) no-repeat center center/cover;  
+    
+}
+.listado{
+    display: inline-block;
+    
+}
+label{
+    display: block;
+}
+input[type = "text"]{
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    align-items: flex-end;
+    margin: 20px 0px;
+    background: none;
+}
+input[type = "email"]{
+border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: none;
+    border: 2px solid #fff;
+    align-items: flex-end;
+    margin: 20px 0px;
+}
+input[type = "mensaje"]{
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background: none;
+    width: 100%;
+    height:150px;
+    text-align: center;
+    margin: 20px 0px;
+}
+input:hover{
+background: #fff;
+transition: 1s;
+}
+input[type = "submit"]{
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #fff; /* tamaño y color de borde */
+    padding: 16px 19px;
+    border-radius: 13px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: 28px;
+}
+input[type = "submit"]:hover {
+    color: rgb(251, 15, 15);/* color de fuente hover */
+  }
+  input[type = "submit"]::after {
+    content: "";
+    background: rgb(4, 8, 255); /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 10px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+    transition: all 0.3s ease;
+  }
+  input[type = "submit"]:hover::after {
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+  }
+.contact-messenger{
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+.boton{
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.fotoc1{
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background: red;
+}
+
+.fotoc2{
+    margin: 0 0;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+}
+.fotoc3{
+    margin: 0 0;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background: rgb(31, 7, 245);
+}
+.fotoc4{
+    margin: 0 0;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    background: rgb(8, 149, 15);
+}
+.img-principal-c{
+    background: rgb(253, 228, 2, .7);
+
+}
+.img-principal-c img{
+    width: 50%;
+    height: 400px;
+    margin: 0 25%;
+    
+}
+.video{
+    width: 100%;
+ border: 12px solid #fff;
+}
+
+.video1{
+    width: 100%;
+    border: 12px solid #fff;
+}
+.video2{
+    width: 100%;
+    border: 12px solid #fff;
+}
+.video3{
+    width: 100%;
+    border: 12px solid #fff;
+}
+video{
+    width: 100%;
+}
+
+.banner-volqueta-s{
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.banner-volqueta-s .contenido-banner{
+    background:#000;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.banner-volqueta-s .contenido-banner main{
+    width: 100%;
+    color: #fff;
+    opacity: .7;
+}
+/*Botones*/
+
+.btn-banner {
+    /* color de fondo */
+   color: #4741d7; /* color de fuente */
+   border: 2px solid #fff; /* tamaño y color de borde */
+   padding: 16px 19px;
+   border-radius: 13px; /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+   margin: 28px;
+ }
+ .btn-banner:hover {
+   color: #fff;/* color de fuente hover */
+ }
+ .btn-banner::after {
+   content: "";
+   background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple); /* color de fondo hover */
+   position: absolute;
+   z-index: -1;
+   padding: 16px 10px;
+   display: block;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0);
+   transition: all 0.3s ease;
+ }
+ .btn-banner:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1);
+ }
+ .btn-banner1 {
+    /* color de fondo */
+   color: #4741d7; /* color de fuente */
+   border: 2px solid #fff; /* tamaño y color de borde */
+   padding: 16px 19px;
+   border-radius: 13px; /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+   margin: 28px;
+ }
+ .btn-banner1:hover {
+   color: #fff;/* color de fuente hover */
+ }
+ .btn-banner1::after {
+   content: "";
+   background: #f80000; /* color de fondo hover */
+   position: absolute;
+   z-index: -1;
+   padding: 16px 10px;
+   display: block;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0);
+   transition: all 0.3s ease;
+ }
+ .btn-banner1:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1);
+ }
+ .btn-banner2 {
+    /* color de fondo */
+   color: #4741d7; /* color de fuente */
+   border: 2px solid #fff; /* tamaño y color de borde */
+   padding: 16px 19px;
+   border-radius: 13px; /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+   margin: 28px;
+ }
+ .btn-banner2:hover {
+   color: #fff;/* color de fuente hover */
+ }
+ .btn-banner2::after {
+   content: "";
+   background: rgb(4, 8, 255); /* color de fondo hover */
+   position: absolute;
+   z-index: -1;
+   padding: 16px 10px;
+   display: block;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0);
+   transition: all 0.3s ease;
+ }
+ .btn-banner2:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1);
+ }
+ .btn-banner3 {
+    /* color de fondo */
+   color: #4741d7; /* color de fuente */
+   border: 2px solid #fff; /* tamaño y color de borde */
+   padding: 16px 19px;
+   border-radius: 13px; /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+   margin: 28px;
+ }
+ .btn-banner3:hover {
+   color: #fff;/* color de fuente hover */
+ }
+ .btn-banner3::after {
+   content: "";
+   background: #00f80c; /* color de fondo hover */
+   position: absolute;
+   z-index: -1;
+   padding: 16px 10px;
+   display: block;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0);
+   transition: all 0.3s ease;
+ }
+ .btn-banner3:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1);
+ }
+
+.btn-s {
+    /* color de fondo */
+   color: #4741d7; /* color de fuente */
+   border: 2px solid #fff; /* tamaño y color de borde */
+   padding: 16px 19px;
+   border-radius: 13px; /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+   margin: 28px;
+ }
+ .btn-s:hover {
+   color: #fff;/* color de fuente hover */
+ }
+ .btn-s::after {
+   content: "";
+   background: #f80000; /* color de fondo hover */
+   position: absolute;
+   z-index: -1;
+   padding: 16px 10px;
+   display: block;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0);
+   transition: all 0.3s ease;
+ }
+ .btn-s:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1);
+ }
+
+ .btn-sS {
+   /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #fff; /* tamaño y color de borde */
+  padding: 16px 19px;
+  border-radius: 13px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin: 100%;
+}
+.btn-sS:hover {
+  color: #fff;/* color de fuente hover */
+}
+.btn-sS::after {
+  content: "";
+  position: absolute;
+  background: red; /* color de fondo hover */
+  z-index: -1;
+  padding: 16px 10px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 1s ease;
+}
+.btn-sS:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+.btn-s2S {
+   /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #fff; /* tamaño y color de borde */
+  padding: 16px 9px;
+  border-radius: 13px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin: 28px;
+}
+.btn-s2S:hover {
+  color: #fff;/* color de fuente hover */
+}
+.btn-s2S::after {
+  content: "";
+  background: #f80000; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 10px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.btn-s2S:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+ .btn-s23 {
+   /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #fff; /* tamaño y color de borde */
+  padding: 16px 10px;
+  border-radius: 13px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px 8px;
+}
+.btn-s23:hover {
+  color: #fff;/* color de fuente hover */
+}
+.btn-s23::after {
+  content: "";
+  background: url(/Imagenes/LogosIndexyServicios/TRACTOMULA-logo.png); /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 10px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.btn-s23:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+ .btn-s2 {
+   /* color de fondo */
+   width: 90%;
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #fff; /* tamaño y color de borde */
+  padding: 16px 30px;
+  border-radius: 13px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px 50px;
+}
+.btn-s2:hover {
+  color: #fff;/* color de fuente hover */
+}
+.btn-s2::after {
+  content: "";
+  background: #ff0000; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 10px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.btn-s2:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+.btn-s3 {
+   /* color de fondo */
+  color: #4741d7; /* color de fuente */
+  border: 2px solid #fff; /* tamaño y color de borde */
+  padding: 16px 10px;
+  border-radius: 13px; /* redondear bordes */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0px 20px;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.btn-s3:hover {
+  color: #fff;/* color de fuente hover */
+}
+.btn-s3::after {
+  content: "";
+  background: #ff0000; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0);
+  transition: all 0.3s ease;
+}
+.btn-s3:hover::after {
+  transition: all 0.3s ease-out;
+  transform: scale(1, 1);
+}
+
+img  {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+ }
+ 
+ .transition {
+    -webkit-transform: scale(1.8); 
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+ }
+ .fondo  {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+ }.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.1);
+ }
+
+.btn-sSs {
+    /* color de fondo */
+   color: #4741d7; /* color de fuente */
+   border: 2px solid #fff; /* tamaño y color de borde */
+   padding: 16px 19px;
+   border-radius: 13px; /* redondear bordes */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   display: inline-block;
+   margin: 10px 100px;
+ }
+ .btn-sSs:hover {
+   color: #fff;/* color de fuente hover */
+ }
+ .btn-sSs::after {
+   content: "";
+   position: absolute;
+   background: red; /* color de fondo hover */
+   z-index: -1;
+   padding: 16px 10px;
+   display: block;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   transform: scale(0, 0);
+   transition: all 1s ease;
+ }
+ .btn-sSs:hover::after {
+   transition: all 0.3s ease-out;
+   transform: scale(1, 1);
+ }
+ @media  (max-width: 700px){
+     .servicios{
+        justify-content: center;
+        display: flex;
+        grid-template-columns: 1fr 1fr ;
+        gap: 30px;
+        
+     }
+ }
+
