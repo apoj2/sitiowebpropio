@@ -6,7 +6,7 @@
 body{
     background: #fff;
     color: #fff;
-    background-color: #232925;
+    background-color: #ffffff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
   
@@ -20,12 +20,12 @@ ul{
 }
 .contenedor{
     margin: auto;
-    background-color: #000;
+    background-color: yellow;
     height: 60px;
 }
 /*Barra lateral principal*/
 nav{
-    background:rgb(0, 0, 0, .5);
+    background:yellow;
     position: fixed;
     font-size: 17px;
     display: inline-flex;
@@ -57,7 +57,7 @@ nav ul{
 }
 .barra-listas > li > a{
     display: block;
-    color: #fff;
+    color: #000;
 }
 /*:hover para colocar una raya cada vez que se pase por un elemento LI de la barra lateral*/
 nav ul li a:hover{
@@ -178,7 +178,7 @@ nav ul li a:hover{
     margin: 10px 0px;
         width: 30%;
         height: auto;
-        background-color: rgb(255, 238, 2);
+        background-color: rgb(206, 206, 203);
         display: inline;
         align-items: center;
         justify-content: center;
@@ -324,14 +324,18 @@ border-radius: 15px;
     align-items: flex-end;
     margin: 20px 0px;
 }
-input[type = "mensaje"]{
-    border-radius: 15px;
-    border: 2px solid #fff;
-    background: none;
-    width: 100%;
-    height:150px;
-    text-align: center;
-    margin: 20px 0px;
+textarea{
+  border-radius: 15px;
+  
+  text-align: center;
+  background: none;
+  border: 2px solid #fff;
+  align-items: flex-end;
+  margin: 20px 0px;
+}
+textarea:hover{
+  background: #fff;
+  transition: 1s;
 }
 input:hover{
 background: #fff;

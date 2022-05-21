@@ -20,12 +20,13 @@ ul{
 }
 .contenedor{
     margin: auto;
-    background-color: #000;
+    background-color: rgb(251, 255, 0);
     height: 60px;
 }
 /*Barra lateral principal*/
 nav{
-    background:rgb(0, 0, 0);
+   
+    background:rgb(251, 255, 0);
     position: fixed;
     font-size: 17px;
     display: inline-flex;
@@ -50,15 +51,16 @@ nav ul{
     list-style: none;
     display: inline-flex;
 margin: 20px;
+
 }
 .barra-listas > li{
-    
+    color: #000;
     display: block;
     padding: 60px;
 }
 .barra-listas > li > a{
     display: block;
-    color: #fff;
+    color: #000;
 }
 /*:hover para colocar una raya cada vez que se pase por un elemento LI de la barra lateral*/
 nav ul li a:hover{
@@ -155,7 +157,7 @@ nav ul li a:hover{
 .flecha>a{
     width: 30px;
     height: 30px;
-    background-color: #f80000;
+    background-color: #d4d4d4;
     position: fixed;
     bottom: 0;
     box-sizing: border-box;
@@ -1310,4 +1312,10 @@ img  {
 .btnmenu{
     background-color: #000;
 }
-
+.fondo-servicio{
+    background-color: rgba(240, 240, 240, 0.842);
+}
+.fondo-servicio>a{
+margin-left: 50px;
+    
+}

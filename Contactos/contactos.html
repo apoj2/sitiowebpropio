@@ -82,7 +82,7 @@
        </div>
    <section class="contactoemail" id="contactoemail">
        <div class="fondo">
-           <form action="" method="post" class="listado">          
+           <form action="/formu.php" method="post" class="listado">          
                  <div class="form-group"> <label for="nombre">Nombre</label>
                  <input type="text" name="nombre" id="nombre" required placeholder="Nombre" >
                  </div>
@@ -92,10 +92,10 @@
                   </div> 
                   <div class="form-group">
                   <label for="Mensaje">Mensaje</label>
-                  <input type="text" name="mensaje" id="mensaje" required >
+                  <textarea name="mensaje" type="mensaje"id="mensaje" cols="30" rows="10"></textarea>
                   </div>
                   <div class="form-group">
-                  <button>Enviar informacion</button>
+                  <input type="submit" name="button"value="enviar">
                   </div>
            </form>
          </div>

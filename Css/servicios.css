@@ -6,7 +6,7 @@
 body{
     background: #fff;
     color: #fff;
-    background-color: #232925;
+    background-color: #ffffff;
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
   
@@ -20,12 +20,12 @@ ul{
 }
 .contenedor{
     margin: auto;
-    background-color: #000;
+    background-color: yellow;
     height: 60px;
 }
 /*Barra lateral principal*/
 nav{
-    background:rgb(0, 0, 0, .5);
+    background:yellow;
     position: fixed;
     font-size: 17px;
     display: inline-flex;
@@ -57,7 +57,7 @@ nav ul{
 }
 .barra-listas > li > a{
     display: block;
-    color: #fff;
+    color: #000;
 }
 /*:hover para colocar una raya cada vez que se pase por un elemento LI de la barra lateral*/
 nav ul li a:hover{
