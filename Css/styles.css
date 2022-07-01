@@ -186,6 +186,10 @@ nav ul li a:hover{
     width: 90%;
     height: 400px;
     border-radius: 15px;
+   font-size: 24px;
+}
+.seccion1solucionesdecarpado>h2{
+   text-align: center;
 }
 .seccion2solucionesdecarpado{
     display: flex;
@@ -197,7 +201,11 @@ nav ul li a:hover{
     width: 90%;
     height: 400px;
     border-radius: 15px;
+    font-size: 24px;
 }
+.seccion2solucionesdecarpado>h2{
+    text-align: center;
+ }
 .seccion3solucionesdecarpado{
     display: flex;
     flex-direction: column;
@@ -208,7 +216,12 @@ nav ul li a:hover{
     width: 90%;
     height: 400px;
     border-radius: 15px;
+    font-size: 24px;
+    
 }
+.seccion3solucionesdecarpado>h2{
+    text-align: center;
+ }
 .seccionessoluciones{
     display: flex;
     
@@ -219,7 +232,45 @@ nav ul li a:hover{
     height: 300px;
     border-radius: 15px;
 }
+.seccionessoluciones>p{
+    background-color:rgb(235, 240, 237, .8);
+    border-radius: 15px;
+    margin: 20px;
+    height: 150px;
+}
+.secciones1soluciones{
+    display: flex;
+    
+}
+.secciones1soluciones>img{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.secciones1soluciones>p{
+    background-color:rgb(235, 240, 237, .8);
+    border-radius: 15px;
+    margin: 20px;
+    height: 280px;
+}
 
+.secciones2soluciones{
+    display: flex;
+    
+}
+.secciones2soluciones>img{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+.secciones2soluciones>p{
+    background-color: rgb(235, 240, 237, .8);
+    border-radius: 15px;
+    margin: 20px;
+    height: 145px;
+}
 /* Seccion de nuestros productos*/
 /* texto*/
 .servicio{

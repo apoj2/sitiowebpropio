@@ -351,7 +351,8 @@ input[type = "submit"]{
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin: 28px;
+    margin-bottom: 40px;
+    margin-left: 65px;
 }
 input[type = "submit"]:hover {
     color: rgb(251, 15, 15);/* color de fuente hover */
